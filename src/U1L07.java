@@ -6,7 +6,7 @@ public class U1L07 {
 
 	public static void main(String[] args) {
 		
-		String [] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+		String [] daysOfWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 		int dayNum = 0;
 		String dayNumber;
 		
@@ -18,6 +18,9 @@ public class U1L07 {
 		int [] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		int i = 0;
 		String [] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+		
+		int weekday = dayNum%7;
+		
 		while(dayNum > daysInMonth[i]) {
 			dayNum -= daysInMonth[i];
 			i++;
@@ -25,7 +28,8 @@ public class U1L07 {
 		
 		
 		
-		System.out.println("The date is " + months[i] + " " + dayNum);
+		
+		System.out.println("The date is " + months[i] + " " + dayNum + ". It is a " + daysOfWeek[weekday] + ".");
 		
 		
 	}
