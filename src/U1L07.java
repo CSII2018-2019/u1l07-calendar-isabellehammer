@@ -18,29 +18,14 @@ public class U1L07 {
 		int [] daysInMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		int i = 0;
 		String [] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-		int [] numberOfDays = {365};
+		while(dayNum > daysInMonth[i]) {
+			dayNum -= daysInMonth[i];
+			i++;
+		}
 		
-		if (dayNum%7 == 0) {
-			System.out.println("Monday");
-		}
-		if (dayNum%7 == 1) {
-			System.out.println("Tuesday");
-		}
-		if (dayNum%7 == 2) {
-			System.out.println("Wednesday");
-		}
-		if (dayNum%7 == 3) {
-			System.out.println("Thursday");
-		}
-		if (dayNum%7 == 4) {
-			System.out.println("Friday");
-		}
-		if (dayNum%7 == 5) {
-			System.out.println("Saturday");
-		}
-		if (dayNum%7 == 6) {
-			System.out.println("Sunday");
-		}
+		
+		System.out.println("The date is " + daysOfWeek[i] + ", " + months[i] + " " + daysInMonth[i]);
+		
 		
 	}
 
