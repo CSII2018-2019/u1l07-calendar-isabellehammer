@@ -24,7 +24,8 @@ public class U1L07 {
 		}
 		
 		
-		System.out.println("The date is " + daysOfWeek[i] + ", " + months[i] + " " + daysInMonth[i]);
+		
+		System.out.println("The date is " + months[i] + " " + dayNum);
 		
 		
 	}
